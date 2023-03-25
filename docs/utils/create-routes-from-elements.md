@@ -10,6 +10,7 @@ title: createRoutesFromElements
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Route,
   RouterProvider,
 } from "react-router-dom";
 
