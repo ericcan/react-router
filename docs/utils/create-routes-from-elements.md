@@ -16,7 +16,7 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="dashboard" element={<Dashboard /> loader=dbLoader} />
       <Route path="about" element={<About />} />
     </Route>
   )
@@ -31,6 +31,7 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />,
+        loader: dbLoader,
       },
       {
         path: "about",
